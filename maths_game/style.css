@@ -1,0 +1,156 @@
+body{
+	background-color: black;
+}
+@keyframes lo{
+    0%{
+        color: blue;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        color: blueviolet;
+        left: 83px;
+        top: 0px;
+    }
+    50%{
+        color: brown;
+        left: 83px;
+        top: 83px;
+    }
+    75%{
+        color: red;
+        left: 0px;
+        top: 83px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+#gameOver{
+	position: absolute;
+	height: 200px;
+	width: 400px;
+	left: 80px;
+	top: 60px;
+	animation-name: lo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	background: linear-gradient(yellow,red);
+	text-align: center;
+	font-size: 40px;
+	display: none;
+	text-transform: uppercase;
+}
+html{
+	background: radial-gradient(circle,#fff, #ccc);
+}
+#container{
+	background-color: lightblue;
+	height: 390px;
+	width:500px;
+	margin: 200px auto;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+}
+#score{
+	background-color: yellow;
+	position:absolute;
+	left: 430px;
+	top: 10px;
+	padding: 5px;
+	box-shadow: 0px 4px 4px purple; 
+}
+#correct{
+background-color: green;
+padding: 5px;
+position: absolute;
+left: 230px;
+display: none;
+}
+#tryAgain{
+	display:none;
+	background-color: red;
+	padding: 5px;
+	position: absolute;
+	left: 230px;
+}
+#question{
+	margin: 50px auto 10px auto;
+	text-align: center;
+	background-color: purple;
+	height: 150px;
+	width:370px;
+	font-size: 70px;
+	border-radius: 10px;
+	line-height: 135px;
+	font-family: cursive, sans-serif;
+}
+#click{
+	width:370px;
+	height: 40px;
+	background-color: purple;
+	top: 210px;
+	margin: 10px auto;
+	border-radius: 3px;
+	text-align: center;
+	color: white;
+}
+#choices{
+	width: 370px;
+	height: 70px;
+	margin: 10px auto;
+}
+.box{
+	width: 67px;
+	height: 67px;
+	background-color: white;
+	float: left;
+	margin-right: 30px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 0px 4px 4px grey;
+	transition: margin 0.3s ease;
+	line-height: 60px
+}
+.box:hover{
+	width: 73px;
+	height: 73px;
+	background-color: white;
+	float: left;
+	margin-right: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+#box4{
+	margin-right:0px;
+}
+#start{
+	background-color: white;
+	padding: 5px;
+	position: absolute;
+	left: 230px;
+	cursor: pointer;
+	margin: 10px;
+	box-shadow: 0px 4px 4px grey;
+	transition: margin 0.3s ease;
+}
+#start:hover{
+	width: 80px;
+	height: 25px;
+	background-color: white;
+	margin: 10px;
+	position: absolute;
+	left: 230px;
+	cursor: pointer;
+}
+#time{
+	background-color: lightgreen;
+	left: 350px;
+	position: absolute;
+	padding: 5px;
+	margin: 10px;
+	display: none;
+}
+
