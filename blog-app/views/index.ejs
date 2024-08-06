@@ -1,0 +1,28 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1 draggable="true">Blog Posts</h1><hr>
+	</div>
+		<a href="/new-post" class="create" draggable="false">Create New Post</a>
+		<ul>
+			<% posts.forEach(post => { %>
+		<li>
+			<h2><%= post.title %></h2>
+			<p><%= post.content %></p>
+			<a href ="/edit-post/<%= post.id %>">Edit</a>
+			<form action="/delete-post/<%= post.id %>" method="POST">
+				<button type="submit">Delete</button>
+			</form>
+		</li>
+		<%}) %>
+		</ul>
+		<footer>Copy-right &copy; Emmyglobal 2024</footer>
+</body>
+</html>
