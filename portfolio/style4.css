@@ -1,0 +1,105 @@
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background: #15284D;
+    box-shadow: 0 0 10px #09181D;
+}
+.logo{
+    font-weight: bolder;
+    color: #fff;
+    padding: 5px;
+}
+.nav{
+    gap: 20px;
+    display: flex;
+}
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    transition: all 0.3s ease-out;
+}
+.nav a:hover{
+    color:burlywood;
+    font-size: 17px;
+}
+.btn-login{
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.4s ease;
+}
+.btn-login:hover{
+    background-color: #0056b5;
+}
+.hero{
+    background: url('./images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero-header{
+    font-size: 3rem;
+    margin: 15px;
+}
+.text{
+    font-size: 1.5rem;
+    margin: 15px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #09181D;
+    color: #fff;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-right{
+   
+}
+.social{
+color: #fff;
+text-decoration: none;
+margin-left: 20px;
+transition: all 0.3s ease;
+}
+.social:hover{
+    color: burlywood;
+    font-size: 18px;
+}
+.footer-left{
+    margin-top: 10px;
+}
